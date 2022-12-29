@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-05</title>
     <!--start google fonts declaration-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,7 +62,9 @@
       <section class="section main-head-background">
         <div class="container">
           <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button-order" type="button">Zamów usługę</button>
+          <button class="button-order" type="button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
       <section class="section">
@@ -131,6 +133,7 @@
                 width="370"
                 height="294"
               />
+              <p>APLIKACJE KOMPUTEROWE</p>
             </li>
             <li>
               <img
@@ -139,6 +142,7 @@
                 width="370"
                 height="294"
               />
+              <p>APLIKACJE MOBILNE</p>
             </li>
             <li>
               <img
@@ -147,6 +151,7 @@
                 width="370"
                 height="294"
               />
+              <p>APLIKACJE GRAFICZNE</p>
             </li>
           </ul>
         </div>
@@ -445,5 +450,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>x</button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
