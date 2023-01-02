@@ -375,8 +375,6 @@ header {
 .portfolio-link {
   display: block;
   transition: box-shadow var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -467,7 +465,6 @@ footer .logo-part2 {
 .social-links-img:focus {
   background-color: var(--my-blue);
   color: var(--just-white);
-  border-radius: 50%;
 }
 .our-clients {
   display: flex;
@@ -486,6 +483,8 @@ footer .logo-part2 {
   border-radius: 4px;
   transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1),
     border-color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+  /* outline: transparent; */
+  /* outline-color: var(--my-blue); */
 }
 .client-img:hover,
 .client-img:focus {
